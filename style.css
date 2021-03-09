@@ -13,6 +13,9 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.screen-size{
+    width: 1366px;
+}
 @font-face {
     font-family: workSansMedium;
     src: url(./Fonts/WorkSans-Medium.ttf);
@@ -27,8 +30,6 @@ body{
   }
       
 .menu{
-    box-sizing: border-box;
-    width: 1366px;
     height: 100px;
     background: rgb(255, 255, 255);
     text-align: right;
@@ -36,13 +37,10 @@ body{
     padding-right: 98px;
 }
 .mobile-menu-items{
-    box-sizing: border-box;
     height: 100px;
     background: rgb(255, 255, 255);
 }
 .mobile-menu-items{
-    box-sizing: border-box;
-    width: 1366px;
     height: 100px;
     background: rgb(255, 255, 255);
     
@@ -77,12 +75,10 @@ body{
     color: rgb(0, 0, 0)!important;
 }
 .content{
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 1667px;
-    width: 1366px;    
     background: rgb(246,246,246);
     padding-top: 97px;
     padding-left: 97px;
@@ -97,7 +93,6 @@ body{
     background: rgb(223,223,223);
 }
 .more-posts{
-    width: 1366px;
     height: 100px;
     padding-top: 48px;
     text-align: center;
@@ -105,7 +100,6 @@ body{
     font-family: workSansRegular;
 }
 .social-icons{
-    width: 1366px;
     height: 160px;    
     padding-top: 54px;
     text-align: center;     
@@ -133,7 +127,6 @@ button{
     margin-right: 29px;
 }
 .text-part{
-    box-sizing: border-box;
     background: rgb(255, 255, 255);
     padding-left: 31px;
     padding-top: 22px;
@@ -191,5 +184,24 @@ button{
     .mobile-menu:hover .mobile-menu-items{
         display: block;
         z-index: 999;
+    }
+    /* ordering by date for mobile screen */
+    .card:nth-child(2){
+        order:1 ;
+    }
+    .card:nth-child(5){
+        order:2 ;
+    }
+    .card:nth-child(8){
+        order:3 ;
+    }
+    .card:nth-child(3){
+        order:4 ;
+    }
+    .card:nth-child(6){
+        order:5 ;
+    }
+    .card:nth-child(9){
+        order:8 ;
     }
   }
